@@ -1,0 +1,42 @@
+{
+  "questions": [
+    {
+      "answers": [
+        "Yes",
+        "No"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "image": "disney.png",
+      "number": 1,
+      "prompt": "Did Disney recenlty make a movie about Sneakers?"
+    },
+    {
+      "answers": [
+        "Heat",
+        "Celtics"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "image": "nba.png",
+      "number": 2,
+      "prompt": "Who won last night?"
+    },
+    {
+      "answers": [
+        "Tesla",
+        "Porsche"
+      ],
+      "correct": {
+        "index": 1
+      },
+
+      "number": 3,
+      "prompt": "Who holds the Guinness Record for Longest Drift in an Electric Car?"
+    }
+  ],
+  "title": "DRIVIA",
+  "url": "http://urbaninstitute.github.io/quick-quiz/"
+}
