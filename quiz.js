@@ -287,7 +287,7 @@ function resultsText(state) {
 
   switch (true) {
     case (ratio === 1):
-      text = "Prefect";
+      text = "Perfect";
       break;
     case (ratio > 0.5):
       text = "Well, at least you got half of them right";
