@@ -292,7 +292,10 @@ function resultsText(state) {
     case (ratio > 0.5):
       text = "Well, at least you got half of them right";
       break;
-    case (ratio < 0.4 && ratio !== 0):
+    case (ratio < 0.4 && ratio != 0):
+      text = "Even I'm disgusted";
+      break;
+    case (ratio == 0):
       text = "Yikes";
       break;
   }
