@@ -230,7 +230,6 @@ var $indicators = $('<ol>')
         // advance to next question on OK click or
         // click of overlay
         swal(opts, next);
-        $('.sweet-overlay').on('click', next);
 
       });
 
