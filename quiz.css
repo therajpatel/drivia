@@ -17,7 +17,7 @@ html, body {
 
 .quiz-answers {
   text-align: center;
-  width: 250px;
+  width: 200px;
   margin: 0 auto;
   display: block;
   padding-bottom: 5px;
@@ -43,16 +43,16 @@ html, body {
   font-family: inherit;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 25px;
   background-color: rgb(45, 45, 122);
   color: white;
   border-radius: 4px;
   text-transform: uppercase;
   white-space: normal !important;
-  max-width: 250px;
-  width: 250px;
-  height: 75px;
-  line-height: 60px;
+  max-width: 200px;
+  width: 200px;
+  height: 65px;
+  line-height: 50px;
 
 }
 
@@ -65,7 +65,7 @@ html, body {
 
 .question-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 200px;
     margin-bottom: -80px;
     margin: 0 auto;
 }
