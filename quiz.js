@@ -286,16 +286,16 @@ function resultsText(state) {
 
   switch (true) {
     case (ratio === 1):
-      text = "Perfect";
+      text = "3 out of 3, not bad at all";
       break;
     case (ratio > 0.5):
-      text = "Well, at least you got half of them right";
+      text = "You're never going to be enough";
       break;
     case (ratio < 0.4 && ratio != 0):
-      text = "Even I'm disgusted";
+      text = "I don't think this is for you";
       break;
     case (ratio == 0):
-      text = "Yikes";
+      text = "I don't even know how you look at yourself in the morning";
       break;
   }
   return text;
