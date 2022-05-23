@@ -2,39 +2,43 @@
   "questions": [
     {
       "answers": [
-        "Yes",
-        "No"
+        "Today",
+        "Yesterday",
+        "End of this month"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
-      "image": "disney.png",
+      "image": "tacobell.png",
       "number": 1,
-      "prompt": "Did Disney recenlty make a movie about Sneakers?"
+      "prompt": "What's the last day to redeem the free Mexican Pizza on the app?"
     },
     {
       "answers": [
-        "Heat",
-        "Celtics"
+        "Manchester",
+        "Liverpool",
+        "Chelsea"
       ],
       "correct": {
         "index": 0
       },
-      "image": "nba.png",
+      "image": "premier.png",
       "number": 2,
-      "prompt": "Who won last night?"
+      "prompt": "Who won the Premier League?"
     },
     {
       "answers": [
-        "Porsche",
-        "Zhiji"
+        "2",
+        "3",
+        "4"
       ],
       "correct": {
-        "index": 1
+        "index": 2
       },
+      "image": "stranger.png",
 
       "number": 3,
-      "prompt": "Who recently broke the Guinness Record for longest drift in an electric car?"
+      "prompt": "Which season of Stranger Things is releasing this Friday?"
     }
   ],
   "title": "DRIVIA",
