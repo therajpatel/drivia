@@ -69,6 +69,7 @@ html, body {
     max-width: 200px;
     margin-bottom: -80px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .question-image img,
@@ -207,6 +208,8 @@ html, body {
 .sweet-alert {
       margin-top: -251px !important;
       position: absolute;
+      height: 600px;
+      padding: 150px;
   }
 
 
@@ -279,6 +282,6 @@ button {
   text-align: center;
   margin-top: 30px;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 
 }
