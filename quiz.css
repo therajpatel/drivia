@@ -114,7 +114,7 @@ html, body {
 .quiz-title {
   font-size: 100px;
   font-weight: 600;
-  margin-top: 250px;
+  margin-top: 350px; /*250 with share*/
   margin-bottom: 30px;
   color: white;
 }
@@ -124,7 +124,7 @@ html, body {
   text-align: center;
   font-size: 50px;
   font-weight: 600;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 30px;
   color: white;
 }
@@ -192,15 +192,17 @@ html, body {
   background-position: 0 -993px;
   height: 32px;
   width: 32px;
+  margin-right: 10px;
+
 }
 .follow-tw:hover{
  background-position: 0 -1401px;
 }
-/*
+
 .follow-fb {
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(icons-s973202652e.png);
+  background-image: url(chatCircle.png);
   background-position: 0 -1880px;
   height: 32px;
   width: 32px;
@@ -209,7 +211,7 @@ html, body {
  background-position: 0 -1433px;
 }
 
-*/
+
 
 .sweet-alert {
       margin-top: -251px !important;
