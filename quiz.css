@@ -114,7 +114,7 @@ html, body {
 .quiz-title {
   font-size: 100px;
   font-weight: 600;
-  margin-top: 350px; /*250 with share*/
+  margin-top: 400px; /*250 with share*/
   margin-bottom: 30px;
   color: white;
 }
@@ -124,7 +124,7 @@ html, body {
   text-align: center;
   font-size: 50px;
   font-weight: 600;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 30px;
   color: white;
 }
