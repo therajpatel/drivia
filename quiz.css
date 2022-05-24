@@ -39,6 +39,7 @@ html, body {
     border-radius: 4px;
     color: white;
 }
+
 .quiz-button.btn {
   font-family: inherit;
   font-weight: bold;
@@ -111,11 +112,18 @@ html, body {
 .quiz-title {
   font-size: 100px;
   font-weight: 600;
+  margin-top: 250px;
+  margin-bottom: 30px;
+  color: white;
+}
+.results-title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
   margin-top: 300px;
   margin-bottom: 30px;
   color: white;
 }
-
 .results-ratio {
   margin: 20px auto;
   font-size: 24px;
@@ -126,6 +134,7 @@ html, body {
     width: 270px;
     clear: both;
     padding-top: 20px;
+    
 }
 #social-text{
   margin-bottom: 20px;
@@ -212,4 +221,64 @@ html, body {
 .sweet-alert h2{
   display: none;
 }
+}
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+
+
+button {
+
+  right: 0px;
+
+
+
+
+  border: none;
+
+
+
+
+
+  font-family: inherit;
+
+
+  text-transform: uppercase;
+
+  background-color: #1d1d1d;
+  color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  white-space: normal !important;
+  max-width: 100px;
+  width: 100px;
+  height: 65px;
+  line-height: 25px;
+
+
+
+
+
+
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+
 }
