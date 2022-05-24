@@ -292,10 +292,12 @@
   
   }
   
+  
+  var text = "";
   function resultsText(state) {
   
     var ratio = state.correct / state.total;
-    var text;
+
   
     switch (true) {
       case (ratio === 1):
@@ -336,7 +338,11 @@ today = mm + '/' + dd;
       state.correct +
       "/" +
       state.total +
-      " " +
+      "\n" +
+      '"' +
+      text +
+      '"' +
+      "\n" +
       opts.url
 
     );
@@ -364,9 +370,12 @@ today = mm + '/' + dd;
       state.correct +
       "/" +
       state.total +
-      " " +
+      "\n" +
+      '"' +
+      text +
+      '"' +
+      "\n" +
       opts.url
-    );
   
     return (
       "http://twitter.com/intent/tweet?text=" +
