@@ -317,7 +317,11 @@
   
   }
   
-  
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+
+today = mm + '/' + dd;
 
 
 
@@ -325,10 +329,15 @@
   
     var body = (
 
-      "I got " + state.correct +
-      " out of " + state.total +
-      " on " + opts.title +
-      " " + opts.url
+      opts.title +
+      " " +
+      today +
+      " " +
+      state.correct +
+      "/" +
+      state.total +
+      " " +
+      opts.url
 
     );
   
@@ -348,10 +357,15 @@
   function tweet(state, opts) {
   
     var body = (
-      "I got " + state.correct +
-      " out of " + state.total +
-      " on " + opts.title +
-      " " + opts.url
+      opts.title +
+      " " +
+      today +
+      " " +
+      state.correct +
+      "/" +
+      state.total +
+      " " +
+      opts.url
     );
   
     return (
