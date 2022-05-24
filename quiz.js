@@ -351,7 +351,7 @@
       "I got " + state.correct +
       " out of " + state.total +
       " on " + opts.title +
-      ". " + opts.url
+      " " + opts.url
     );
   
     return (
