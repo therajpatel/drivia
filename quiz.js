@@ -216,9 +216,9 @@
 
 
 
-
-              $twitter_link.attr('href', tweet(state, quiz_opts));
               $facebook_link.attr('href', facebook(state, quiz_opts));
+              $twitter_link.attr('href', tweet(state, quiz_opts));
+
 
 
 
@@ -266,23 +266,23 @@
       .attr('class', 'results-ratio')
       .appendTo($results_slide);
   
-    var $restart_button = $("<div>")
-      .attr("class", "quiz-answers")
-      .appendTo($results_slide);
+ 
   
     var $social = $("<div>")
       .attr('class', 'results-social')
       .html('<div id = "social-text">Share your results with your friends</div>')
       .appendTo($results_slide);
   
-    var $twitter_link = $('<a>')
-      .html('<span class="social social-twitter follow-tw"></span>')
-      .appendTo($social);
+
   
     var $facebook_link = $('<a>')
-      .html('<span class="social social-facebook follow-fb"></span>')
+      .html('<span class="social social-facebook follow-fb"> <img style="margin-bottom:26px" src="chatCircle.png" width="31" height="31"> </span>')
       .appendTo($social);
   
+
+      var $twitter_link = $('<a>')
+      .html('<span class="social social-twitter follow-tw"></span>')
+      .appendTo($social);
     
   
     $(window).on('resize', function() {
@@ -318,6 +318,33 @@
   }
   
   
+
+
+
+  function facebook(state, opts) {
+  
+    var body = (
+
+      "I got " + state.correct +
+      " out of " + state.total +
+      " on " + opts.title +
+      ". " + opts.url
+
+    );
+  
+    return (
+      "sms:&body=" +
+      encodeURIComponent(body)
+    );
+  
+  }
+
+
+
+
+
+
+
   function tweet(state, opts) {
   
     var body = (
@@ -335,14 +362,11 @@
   }
   
 
-
-
-
-
   
-    function facebook(state, opts) {
-      return "https://www.facebook.com/sharer/sharer.php?u=" + opts.url;
-    }
+
+
+
+
   
   
 
