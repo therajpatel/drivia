@@ -172,7 +172,7 @@
           confirmButtonText: "NEXT",
   
           html : true,
-          confirmButtonColor: "rgb(245 222 210)",
+          confirmButtonColor: "rgb(11 27 61)",
           
         };
   
