@@ -276,7 +276,7 @@
 
   
     var $facebook_link = $('<a>')
-      .html('<span class="social social-facebook follow-fb"> <img style="margin-bottom:26px" src="chatCircle.png" width="31" height="31"> </span>')
+      .html('<span class="social social-facebook follow-fb"> <img style="margin-bottom:25px; position:relative; right:13px" src="chatCircle.png" width="31" height="31"> </span>')
       .appendTo($social);
   
 
