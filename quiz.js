@@ -295,7 +295,7 @@ function resultsText(state) {
       text = "No wonder people always talk about you behind your back";
       break;
     case (ratio == 0):
-      text = "Even my Grandma was able to get more correct";
+      text = "Even my dog was able to get more correct";
       break;
   }
   return text;
