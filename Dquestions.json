@@ -2,43 +2,44 @@
   "questions": [
     {
       "answers": [
-        "Today",
-        "Yesterday",
-        "End of May"
+        "Michelle Obama",
+        "Jim Carrey",
+        "Taylor Swift"
       ],
       "correct": {
         "index": 2
       },
-      "image": "tacobell.png",
+      "image": "nyu1.png",
       "number": 1,
-      "prompt": "What's the last day to redeem the free Mexican Pizza on the app?"
+      "prompt": "Who gave the Commencement Speech at NYU this year?"
     },
     {
       "answers": [
-        "Manchester",
-        "Liverpool",
-        "Chelsea"
+        "3",
+        "4",
+        "5"
       ],
+      "correct": {
+        "index": 1
+      },
+      "image": "Dstrange1.png",
+      "number": 2,
+      "prompt": "How many variants of Doctor Strange appear in Multiverse Of Madness?"
+    },
+    {
+      "answers": [
+        "Drake",
+        "Lil Durk",
+        "Gunna"
+      ],
+      
       "correct": {
         "index": 0
       },
-      "image": "premier.png",
-      "number": 2,
-      "prompt": "Who won the Premier League?"
-    },
-    {
-      "answers": [
-        "2",
-        "3",
-        "4"
-      ],
-      "correct": {
-        "index": 2
-      },
-      "image": "stranger.png",
+      
 
       "number": 3,
-      "prompt": "Which season of Stranger Things is releasing this Friday?"
+      "prompt": "Who did Lil Baby bring out during yesterday's Montreal Festival?"
     }
   ],
   "title": "DRIVIA",
