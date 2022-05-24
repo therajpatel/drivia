@@ -1,0 +1,47 @@
+{
+  "questions": [
+    {
+      "answers": [
+        "J.K. Rowling",
+        "Jim Carrey",
+        "Taylor Swift"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "image": "nyu1.png",
+      "number": 1,
+      "prompt": "Who gave the Commencement Speech at NYU this year?"
+    },
+    {
+      "answers": [
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": {
+        "index": 1
+      },
+      "image": "Dstrange1.png",
+      "number": 2,
+      "prompt": "How many variants of Doctor Strange appear in Multiverse Of Madness?"
+    },
+    {
+      "answers": [
+        "Drake",
+        "Metro Boomin",
+        "Gunna"
+      ],
+      
+      "correct": {
+        "index": 0
+      },
+      
+
+      "number": 3,
+      "prompt": "Who did Lil Baby bring out during Montreal's Festival Metro Metro?"
+    }
+  ],
+  "title": "DRIVIA",
+  "url": "https://therajpatel.github.io/drivia/"
+}
