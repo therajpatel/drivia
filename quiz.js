@@ -331,7 +331,7 @@ today = mm + '/' + dd;
   
     var body = (
 
-      opts.title +
+            opts.title +
       " " +
       today +
       " " +
@@ -363,7 +363,7 @@ today = mm + '/' + dd;
   function tweet(state, opts) {
   
     var body = (
-      opts.title +
+            opts.title +
       " " +
       today +
       " " +
