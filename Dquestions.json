@@ -2,35 +2,33 @@
   "questions": [
     {
       "answers": [
-        "J.K. Rowling",
-        "Jim Carrey",
-        "Taylor Swift"
+        "Monkeypox",
+        "Measles",
+        "Mumps"
       ],
       "correct": {
-        "index": 2
+        "index": 0
       },
-      "image": "nyu1.png",
+
       "number": 1,
-      "prompt": "Who gave the Commencement Speech at NYU this year?"
+      "prompt": "Recently, more and more Countries are seeing new casses of which disease?"
     },
     {
       "answers": [
-        "3",
-        "4",
-        "5"
+        "Texas"
       ],
       "correct": {
-        "index": 1
+        "index": 0
       },
-      "image": "Dstrange1.png",
+      
       "number": 2,
-      "prompt": "How many variants of Doctor Strange appear in Multiverse Of Madness?"
+      "prompt": "In which state, did an unfortunate 'active shooter' incident occur?"
     },
     {
       "answers": [
-        "Drake",
-        "Metro Boomin",
-        "Gunna"
+        "Superhero",
+        "Uber Driver",
+        "Mob Boss"
       ],
       
       "correct": {
@@ -39,7 +37,7 @@
       
 
       "number": 3,
-      "prompt": "Who did Lil Baby bring out during Montreal's Festival Metro Metro?"
+      "prompt": "Bad Bunny was recently casted to play as a..."
     }
   ],
   "title": "DRIVIA",
