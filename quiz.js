@@ -299,16 +299,16 @@
   
     switch (true) {
       case (ratio === 1):
-        text = "Never thought you'd get this far but congrats";
+        text = "Well Done";
         break;
       case (ratio > 0.5):
-        text = "You're average";
+        text = "Uncultured";
         break;
       case (ratio < 0.4 && ratio != 0):
-        text = "No wonder people always talk about you behind your back";
+        text = "only 1 out of 3, well at least you're funny";
         break;
       case (ratio == 0):
-        text = "Even my dog was able to get more correct";
+        text = "-";
         break;
     }
     return text;
