@@ -302,10 +302,10 @@
         text = "Well Done";
         break;
       case (ratio > 0.5):
-        text = "Uncultured";
+        text = "slighlty Uncultured";
         break;
       case (ratio < 0.4 && ratio != 0):
-        text = "only 1 out of 3, well at least you're funny";
+        text = "Very Uncultured";
         break;
       case (ratio == 0):
         text = "-";
