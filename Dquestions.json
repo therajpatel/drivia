@@ -28,18 +28,18 @@
     },
     {
       "answers": [
-        "Game Of Thrones",
-        "Lord of The Rings",
-        "Stranger Things"
+        "Superhero",
+        "Uber Driver",
+        "Mob Boss"
       ],
       
       "correct": {
-        "index": 2
+        "index": 0
       },
       
 
       "number": 3,
-      "prompt": "Which franchise did not receive a prequel?"
+      "prompt": "Bad Bunny was recently casted to play as a..."
     }
   ],
   "title": "DRIVIA",
