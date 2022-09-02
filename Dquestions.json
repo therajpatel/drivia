@@ -1,0 +1,47 @@
+{
+  "questions": [
+    {
+      "answers": [
+        "Chocolate",
+        "Tomatoes",
+        "Rice"
+      ],
+      "correct": {
+        "index": 1
+      },
+        
+      "number": 2,
+      "prompt": "Along with fuel, which other shortage is the US experiencing?"
+    },  
+    {
+      "answers": [
+        "Monkeypox",
+        "Measles",
+        "Mumps"
+      ],
+      "correct": {
+        "index": 0
+      },
+
+      "number": 1,
+      "prompt": "Recently, more and more Countries are seeing new casses of which disease?"
+    },
+    {
+      "answers": [
+        "Game Of Thrones",
+        "Lord of The Rings",
+        "Stranger Things"
+      ],
+      
+      "correct": {
+        "index": 2
+      },
+      
+
+      "number": 3,
+      "prompt": "Which franchise did not receive a prequel?"
+    }
+  ],
+  "title": "DRIVIA",
+  "url": "https://therajpatel.github.io/drivia/"
+}
