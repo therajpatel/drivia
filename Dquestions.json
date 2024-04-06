@@ -2,35 +2,35 @@
   "questions": [
     {
       "answers": [
-        "Chocolate",
-        "Tomatoes",
-        "Rice"
+        "Time Stone",
+        "Power Stone",
+        "Vision Stone"
       ],
       "correct": {
-        "index": 1
+        "index": 2
       },
         
       "number": 2,
-      "prompt": "Along with fuel, which other shortage is the US experiencing?"
+      "prompt": "In the Marvel Cinematic Universe, which Infinity Stone does the Mind Stone power? "
     },  
     {
       "answers": [
-        "Monkeypox",
-        "Measles",
-        "Mumps"
+        "Sam Mendes",
+        "Christopher Nolan",
+        "Cary Joji Fukunaga"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
 
       "number": 1,
-      "prompt": "Recently, more and more Countries are seeing new casses of which disease?"
+      "prompt": "Who directed the 2021 film "No Time to Die," the 25th installment in the James Bond series?"
     },
     {
       "answers": [
-        "Superhero",
-        "Uber Driver",
-        "Mob Boss"
+        "Capitol City",
+        "Panem City",
+        "District City"
       ],
       
       "correct": {
@@ -39,7 +39,7 @@
       
 
       "number": 3,
-      "prompt": "Bad Bunny was recently casted to play as a..."
+      "prompt": "What is the name of the dystopian city where the events of "The Hunger Games" take place?"
     }
   ],
   "title": "DRIVIA",
