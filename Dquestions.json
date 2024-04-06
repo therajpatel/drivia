@@ -24,7 +24,7 @@
       },
 
       "number": 1,
-      "prompt": "Who directed the 2021 film "No Time to Die," the 25th installment in the James Bond series?"
+      "prompt": "Who directed the 2021 film 'No Time to Die,' the 25th installment in the James Bond series?"
     },
     {
       "answers": [
@@ -39,7 +39,7 @@
       
 
       "number": 3,
-      "prompt": "What is the name of the dystopian city where the events of "The Hunger Games" take place?"
+      "prompt": "What is the name of the dystopian city where the events of 'The Hunger Games' take place?"
     }
   ],
   "title": "DRIVIA",
