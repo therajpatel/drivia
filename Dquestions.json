@@ -2,35 +2,35 @@
   "questions": [
     {
       "answers": [
-        "Time Stone",
-        "Power Stone",
-        "Vision Stone"
+        "Jane",
+        "Sarah",
+        "Emma"
       ],
       "correct": {
-        "index": 2
+        "index": 0
       },
         
       "number": 2,
-      "prompt": "In the Marvel Cinematic Universe, which Infinity Stone does the Mind Stone power? "
+      "prompt": "In the TV series 'Stranger Things', what is Eleven's real name?"
     },  
     {
       "answers": [
-        "Sam Mendes",
         "Chris Nolan",
-        "Cary Joji Fukunaga"
+        "Denis Villeneuve",
+        "Ridley Scott"
       ],
       "correct": {
-        "index": 2
+        "index": 1
       },
 
       "number": 1,
-      "prompt": "Who directed the 2021 film 'No Time to Die,' the 25th installment in the James Bond series?"
+      "prompt": "Who directed the 2022 science fiction film 'Dune'?"
     },
     {
       "answers": [
-        "Capitol City",
-        "Panem City",
-        "District City"
+        "Niffler",
+        "Bowtruckle",
+        "Hippogriff"
       ],
       
       "correct": {
@@ -39,7 +39,7 @@
       
 
       "number": 3,
-      "prompt": "What is the name of the dystopian city where the events of 'The Hunger Games' take place?"
+      "prompt": "What is the name of the magical creature that Newt Scamander befriends in the 'Fantastic Beasts' film series?"
     }
   ],
   "title": "DRIVIA",
