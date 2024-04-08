@@ -9,7 +9,7 @@
 
 
   
-  // keep track of number of quizes added to page
+  //Keep track of the number of quizzes added to the page
   var quiz_count = 0;
   
   // add jQuery selection method to create
@@ -308,7 +308,7 @@
         text = "Very Uncultured";
         break;
       case (ratio == 0):
-        text = "-";
+        text = "...embarrassing";
         break;
     }
     return text;
