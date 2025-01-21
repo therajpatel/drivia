@@ -1,5 +1,4 @@
 const express = require("express");
-const cors = require("cors");
 const { fetchQuestionsFromAPI } = require("./api");
 const cron = require("node-cron");
 
