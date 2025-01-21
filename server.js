@@ -9,23 +9,11 @@ const PORT = process.env.PORT || 3000;
 const cors = require("cors");
 
 app.use(
-  cors({
-    origin: (origin, callback) => {
-      // Allow requests from your Netlify domain
-      const allowedOrigins = [
-        "https://keen-liger-6b3984.netlify.app",
-        "https://678f161a8761ee917c4bd1fe--keen-liger-6b3984.netlify.app", // Replace with actual deployment IDs
-      ];
-
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: ["GET", "POST"],
-  })
-);
+    cors({
+      origin: ["https://678f161a8761ee917c4bd1fe--keen-liger-6b3984.netlify.app"], // Allow your Netlify site
+      methods: ["GET", "POST"],
+    })
+  );
 
 // Serve static files from the "public" folder
 app.use(express.static("public"));
