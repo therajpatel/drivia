@@ -10,8 +10,8 @@ const cors = require("cors");
 
 app.use(
     cors({
-      origin: ["https://678f161a8761ee917c4bd1fe--keen-liger-6b3984.netlify.app"], // Allow your Netlify site
-      methods: ["GET", "POST"],
+      origin: "https://keen-liger-6b3984.netlify.app", // Use the clean Netlify URL
+      methods: ["GET", "POST"], // Specify allowed methods
     })
   );
 
