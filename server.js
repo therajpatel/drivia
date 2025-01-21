@@ -29,7 +29,7 @@ app.listen(PORT, () => {
 
 
 // Schedule tasks at 6 AM and 6 PM
-cron.schedule("0 6,18 * * *", async () => {
+cron.schedule("27 6,22 * * *", async () => {
   console.log("Running scheduled task to fetch trivia questions...");
   await fetchQuestionsFromAPI();
 });
