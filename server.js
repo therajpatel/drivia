@@ -10,8 +10,9 @@ const cors = require("cors");
 
 app.use(
     cors({
-      origin: "https://drivia.news", // Use the clean Netlify URL
-      methods: ["GET", "POST"], // Specify allowed methods
+      origin: ["https://drivia.news", "https://www.drivia.news"], // Add both domains
+      methods: ["GET", "POST"], // Allow required methods
+      credentials: true, // Allow cookies if needed
     })
   );
 
