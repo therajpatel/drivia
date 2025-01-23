@@ -10,7 +10,7 @@ const cors = require("cors");
 
 app.use(
     cors({
-      origin: "https://keen-liger-6b3984.netlify.app", // Use the clean Netlify URL
+      origin: "https://drivia.news", // Use the clean Netlify URL
       methods: ["GET", "POST"], // Specify allowed methods
     })
   );
