@@ -27,15 +27,15 @@ const removeSimilarSummaries = (summaries, threshold = 0.7) => {
 };
 
 // Fetch questions from GNews API
-const fetchQuestionsFromAPI = async () => {
+const fetchQuestionsFromAPI = async (category = "general") => {
   const gnewsApiKey = process.env.GNEWS_API_KEY;
   if (!gnewsApiKey) {
     console.error("❌ Missing GNews API Key. Check your .env file.");
     return generateDefaultQuestions();
   }
 
-  const cacheFile = "./cache.json";
-  const cacheDuration = 12 * 60 * 60 * 1000; // Cache duration: 1 minute
+  const cacheFile = `./cache_${category}.json`;
+  const cacheDuration = 12 * 60 * 60 * 1000; // 12 hours
 
   try {
     // Check cache validity
@@ -44,29 +44,29 @@ const fetchQuestionsFromAPI = async () => {
         const cache = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
         const now = Date.now();
         if (now - cache.timestamp < cacheDuration) {
-          console.log("✅ Using cached results.");
+          console.log(`✅ Using cached results for ${category}.`);
           return cache.data;
         }
       } catch (error) {
-        console.warn("⚠️ Corrupted cache file. Ignoring cache.", error.message);
+        console.warn(`⚠️ Corrupted cache file for ${category}. Ignoring cache.`, error.message);
       }
     }
 
-    console.log("🌐 Fetching news articles from GNews API...");
+    console.log(`Fetching news articles from GNews API for category: ${category}`);
     const response = await fetch(
-      `https://gnews.io/api/v4/top-headlines?token=${gnewsApiKey}&lang=en&country=us&max=10`
+      `https://gnews.io/api/v4/top-headlines?token=${gnewsApiKey}&lang=en&country=us&max=10&category=${category}`
     );
 
     if (!response.ok) {
       console.error(
-        `❌ Failed to fetch news articles: ${response.status} ${response.statusText}`
+        `❌ Failed to fetch ${category} news articles: ${response.status} ${response.statusText}`
       );
       return generateDefaultQuestions();
     }
 
     const newsData = await response.json();
     if (!newsData.articles || newsData.articles.length === 0) {
-      console.warn("⚠️ No articles found. Returning default questions.");
+      console.warn(`⚠️ No ${category} articles found. Returning default questions.`);
       return generateDefaultQuestions();
     }
 
@@ -96,11 +96,14 @@ const fetchQuestionsFromAPI = async () => {
     );
 
     // Save questions to questions.json
-    fs.writeFileSync("./questions.json", JSON.stringify({ questions }, null, 2));
+    fs.writeFileSync(
+      `./questions_${category}.json`,
+      JSON.stringify({ questions }, null, 2)
+    );
 
     return questions.length > 0 ? questions : generateDefaultQuestions();
   } catch (error) {
-    console.error("❌ Error fetching questions:", error.message);
+    console.error(`❌ Error fetching ${category} questions:`, error.message);
     return generateDefaultQuestions();
   }
 };
@@ -142,6 +145,7 @@ const generateQuestionsFromSummaries = async (summaries, articles) => {
               8. For the options, don't include numbers at the beginning. For example, don't include these: A) or A..
               9. Don't just restate the question for the answers. Instead, make them thought-provoking.
               10. Provide the correct answer, but allow the index to be randomized in the final structure.
+              11. Incorporate recent memes or pop culture in the questions and answer options to make them slightly funny and entertaining.
 
               Provide the output in JSON format:
               {
@@ -165,7 +169,9 @@ const generateQuestionsFromSummaries = async (summaries, articles) => {
         const rawOutput = JSON.parse(aiData.choices[0].message.content.trim());
         if (rawOutput.prompt && Array.isArray(rawOutput.answers)) {
           const correctAnswer = rawOutput.answers[0];
-          const shuffledAnswers = rawOutput.answers.sort(() => Math.random() - 0.5);
+          const shuffledAnswers = rawOutput.answers.sort(
+            () => Math.random() - 0.5
+          );
           const correctIndex = shuffledAnswers.indexOf(correctAnswer);
 
           questions.push({
